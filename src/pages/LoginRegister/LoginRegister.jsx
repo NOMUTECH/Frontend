@@ -36,9 +36,9 @@ const LoginRegister = () => {
                 <input className={checkboxStyle} type="checkbox" />
                 Remember me
               </label>
-              <a href="#" className="hover:underline">
+              <span className="cursor-pointer hover:underline">
                 Forgot password?
-              </a>
+              </span>
             </div>
             <button className={buttonStyle} type="submit">
               Login
@@ -46,13 +46,9 @@ const LoginRegister = () => {
             <div className={registerLink}>
               <p>
                 Don't have an account?
-                <a
-                  className={linkStyle}
-                  href="#"
-                  onClick={() => setAction("active")}
-                >
+                <span className={linkStyle} onClick={() => setAction("active")}>
                   Register
-                </a>
+                </span>
               </p>
             </div>
           </form>
@@ -99,9 +95,9 @@ const LoginRegister = () => {
             <div className={registerLink}>
               <p>
                 Already have an account?
-                <a className={linkStyle} href="#" onClick={() => setAction("")}>
+                <span className={linkStyle} onClick={() => setAction("")}>
                   Login
-                </a>
+                </span>
               </p>
             </div>
           </form>
@@ -129,6 +125,6 @@ const buttonStyle =
 
 const registerLink = "text-center text-sm mt-5 mb-4";
 
-const linkStyle = "font-semibold mx-1 hover:underline";
+const linkStyle = "font-semibold mx-1 cursor-pointer hover:underline";
 
 export default LoginRegister;
