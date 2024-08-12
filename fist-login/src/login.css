@@ -1,24 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Cabin:ital,wght@0,400..700;1,400..700&display=swap');
 
+*:not(.fa-solid){
+    font-family: "Barlow Condensed", sans-serif !important;
+    font-weight: 500;
+}
+
+html{
+    height: 100%;
+    width: 100%;
+}
 
 #loginButton{
-    background-color: white !important;
+    background-color: #3e76c0 !important;
     border-radius: 0.5vh !important;
 }
 
 #fistLogo{
     position:relative;
-    width: 8rem; /* Daha küçük ekranlarda logoyu küçülttüm */
-    height: 8rem;
+    width: 10rem; /* Daha küçük ekranlarda logoyu küçülttüm */
+    height: 10rem;
 }
 
 #formBox{
-    background-color: #3e76c0 !important;
+    background-color: #c3daf9 !important;
     width: 90% !important; /* Mobilde genişliği arttırdım */
     max-width: 400px; /* Masaüstü için maksimum genişlik belirledim */
 }
 
-input{
-    border-radius: 5vh !important;
+.form-control{
+    border-radius: 0.4rem !important;
 }
 
 @media (max-width: 768px) {
@@ -27,11 +37,28 @@ input{
     }
 
     #fistLogo {
-        width: 6rem;
-        height: 6rem;
+        width: 8rem;
+        height: 8rem;
     }
 
     input {
         font-size: 1rem; /* Mobilde yazı boyutunu biraz küçülttüm */
+    }
+}
+
+.d-flex{
+    height: 15rem;
+}
+
+.form-group {
+    position: relative;
+    margin-bottom: 20px !important;
+}
+
+@media (min-width: 768px) {
+    .d-md-flex {
+        display: -webkit-box !important;
+        display: -ms-flexbox !important;
+        display: flex !important;
     }
 }

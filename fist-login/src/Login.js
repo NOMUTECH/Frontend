@@ -31,27 +31,35 @@ function Login(){
 
     return(
         <Fragment>
-
-
-            <div className='d-flex align-items-center justify-content-center vh-100'>
-                <div className='p-3 rounded bg-white w-25 shadow' id='formBox'>
-                    <form>
-                        <img id='fistLogo' src={logo}></img>
-                        <div className='mb-3'>
-                            <label htmlFor='username'><i class="fa-solid fa-user"></i> Kullanıcı Adı :</label>
-                            <input type='username' autoComplete='off' className='form-control rounded-0'></input>
-                        </div>
-                        <div className='mb-3'>
-                            <label htmlFor='password'><i class="fa-solid fa-key"></i> Şifre :</label>
-                            <input type='password' className='form-control rounded-0'></input>
-                        </div>
-                        <button id='loginButton' type='submit' className='w-50 btn shadow'><b>Giriş</b></button>
-                    </form>
+            <div className='d-flex align-items-center justify-content-center pb-5'>
+                <div className='p-3 rounded w-50'>
+                    <img id='fistLogo' src={logo} width={"10rem"} height={"10rem"}></img>
                 </div>
             </div>
-
-
-            
+            <div className='d-flex align-items-center justify-content-center mt-5'>
+                <div className='p-3 bg-white w-25 shadow-lg pt-5 pb-5' id='formBox'>
+                    <form>
+                        <div className='mb-3'>
+                            <label htmlFor='username'><i className="fa-solid fa-user"></i> Kullanıcı Adı :</label>
+                            <input type='username' autoComplete='off' className='form-control mt-2'></input>
+                        </div>
+                        <div className='mb-3'>
+                            <label htmlFor='password'><i className="fa-solid fa-key"></i> Şifre :</label>
+                            <input type='password' className='form-control mt-2'></input>
+                        </div>
+                        <button id='loginButton' type='submit' className='w-50 btn shadow fw-bold fs-5'>Giriş</button>
+                        <div className='row mt-3'>
+                            <div className='col-6'>
+                                <input className='form-check-input mx-2 float-start' type='checkbox'></input>
+                                <label className='checkbox-wrap float-start'>Beni hatırla</label>
+                            </div>
+                            <div className='col-6'>
+                                <a className='float-end' href='#'>Şifremi Unuttum</a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>    
         </Fragment>
     )
 }
