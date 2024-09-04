@@ -31,9 +31,15 @@ module.exports = {
         slateblue: "#6A5ACD",
         seagreen: "#2E8B57",
         "rgba-255": "rgba(255, 255, 255, 0.1)",
+        "blue-100": "#c3daf9",
+        "blue-200": "#3e76c0",
+        "blue-300": "#044295",
+        "blue-400": "#152e4d",
+        "lime-green": "#7ed957",
       },
       height: {
         450: "450px",
+        "screen-minus-72": "calc(100vh - 72px)",
       },
       width: {
         420: "420px",
